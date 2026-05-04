@@ -17,7 +17,7 @@ jq -r --arg room "$ROOM" '
       (.slot.lower | strptime("%Y-%m-%dT%H:%M:%S") | strftime("%H:%M")) as $lower
     | (.slot.upper | strptime("%Y-%m-%dT%H:%M:%S") | strftime("%H:%M")) as $upper
     | (if .note and .note != "" then " (" + .note + ")" else "" end) as $suffix
-    | "\($lower) - \($upper) | \(.name)\($suffix)")
-  | join("\n")
-  | "\($header)\n\(.)\n"
+    | "\($lower) - \($upper)\n\(.name)\($suffix)")
+  | join("\n\n")
+  | "\($header)\n\n\(.)\n"
 ' < <(curl -sS 'https://2026.pgconf.dev/schedule.json')
