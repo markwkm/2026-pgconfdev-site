@@ -8,6 +8,7 @@ export async function load({ parent }) {
   roster.find(({ name }) => name == 'Coffee').span = [0, 3];
   roster.find(({ name }) => name.startsWith('Lunch')).span = [0, 2];
   roster.find(({ name }) => name.startsWith('Lunch')).room = 'Concourse/Segal';
+  roster.find(({ name }) => name.startsWith('Lunch')).href = '/posters';
   roster.find(({ name }) => name == 'Lightning Talks').span = [0, 3];
   roster.find(({ name }) => name == 'Tea + Cake Cutting').span = [0, 3];
   roster.find(({ name }) => name.startsWith('Meet + Eat')).span = [0, 3];
