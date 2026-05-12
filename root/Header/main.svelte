@@ -112,7 +112,9 @@
       <li>
         <a class="iconic" href={resolve('/schedule')}>
           <CalendarDays class="narrow" />
-          <span class="narrow">View the</span> Schedule
+          <span>
+            <span class="narrow">View the</span> Schedule
+          </span>
         </a>
       </li>
 
