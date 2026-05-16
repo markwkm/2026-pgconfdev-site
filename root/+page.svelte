@@ -55,11 +55,11 @@
     <h4>Vancouver, BC, Canada</h4>
   </hgroup>
 
-  <p style="text-align: center;">
-    <a role="button" href={resolve('/about/registration')}>
-      Register (Only a Few Tickets Left!)
-    </a>
-  </p>
+  <!-- <p style="text-align: center;"> -->
+  <!--   <a role="button" href={resolve('/about/registration')}> -->
+  <!--     Register (Only a Few Tickets Left!) -->
+  <!--   </a> -->
+  <!-- </p> -->
 
   <section>
     <h3 class="iconic">
