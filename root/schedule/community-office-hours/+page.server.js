@@ -3,24 +3,24 @@ import { Temporal } from '@js-temporal/polyfill';
 
 const wednesdayRoster = [
   {
-    name: 'Open Slot',
-    slot: new Slot(
-      Temporal.PlainDateTime.from('2026-05-20T07:30:00'),
-      Temporal.PlainDateTime.from('2026-05-20T08:30:00'),
-    ),
-  },
-  {
     name: 'Release Contributor Gifts',
     note: 'Mark Wong',
     description: 'Did you report a bug?  Contribute a patch?  Update documentation?  Maybe you are mentioned in the release notes.  See <a href="https://wiki.postgresql.org/wiki/Contributor_Gifts">https://wiki.postgresql.org/wiki/Contributor_Gifts</a> for details.',
     slot: new Slot(
-      Temporal.PlainDateTime.from('2026-05-20T10:00:00'),
-      Temporal.PlainDateTime.from('2026-05-20T11:30:00'),
+      Temporal.PlainDateTime.from('2026-05-20T07:30:00'),
+      Temporal.PlainDateTime.from('2026-05-20T08:30:00'),
     ),
     style: {
       'background-color': '#2F4F6E',
       color: '#FFFFFF',
     },
+  },
+  {
+    name: 'Open Slot',
+    slot: new Slot(
+      Temporal.PlainDateTime.from('2026-05-20T10:00:00'),
+      Temporal.PlainDateTime.from('2026-05-20T11:30:00'),
+    ),
   },
   {
     name: 'Open Slot',
