@@ -14,6 +14,7 @@
     Utensils,
     Wifi,
     Wine,
+    Zap,
   } from '@lucide/svelte';
 
   const socialPage = resolve('/attend/social');
@@ -102,6 +103,19 @@
   </section>
 
   <section>
+    <h3 class="iconic">
+      <Zap />
+      Lightning Talks
+    </h3>
+
+    <p class="indent">Lightning Talk submissions are open to all attendees.</p>
+
+    <p class="indent">
+      Submit your proposal by dropping a note in the box near the registration
+      desk (available starting Tuesday). We will randomly select 12 submissions
+      and notify selected speakers by email by 18:00 on Wednesday.
+    </p>
+
     <h3 class="iconic">
       <CalendarDays />
       <a href={resolve('/schedule/tuesday')}>Tuesday, May 19</a>
